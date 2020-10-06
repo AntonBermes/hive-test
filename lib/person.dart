@@ -10,7 +10,7 @@ class Obj extends HiveObject {
   int id;
 
   @HiveField(2)
-  List<Animal> animals;
+  HiveList<Animal> animals;
 
   @override
   String toString() {
@@ -19,7 +19,7 @@ class Obj extends HiveObject {
 }
 
 @HiveType(typeId : 1)
-class Animal {
+class Animal  extends HiveObject {
   @HiveField(0)
   String name;
 

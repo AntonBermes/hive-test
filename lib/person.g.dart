@@ -19,7 +19,7 @@ class ObjAdapter extends TypeAdapter<Obj> {
     return Obj()
       ..name = fields[0] as String
       ..id = fields[1] as int
-      ..animals = (fields[2] as List)?.cast<Animal>();
+      ..animals = (fields[2] as HiveList)?.castHiveList();
   }
 
   @override
