@@ -19,7 +19,7 @@ class Obj extends HiveObject {
 }
 
 @HiveType(typeId : 1)
-class Animal extends HiveObject {
+class Animal {
   @HiveField(0)
   String name;
 
