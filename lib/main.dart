@@ -66,7 +66,7 @@ Future<void> clearAndFillDB() async {
 Future<void> removeAnimals() async {
   var animal = objectsBox.getAt(0).animals[0];
   animal.delete();
-  print("test1");
+  print("test4");
   printBox('animal removed');
 }
 
