@@ -19,7 +19,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await clearAndFillDB();
-  await removeAnimal();
+  await removeAnimals();
   await removeObj();
   await addResult();
 
@@ -63,9 +63,10 @@ Future<void> clearAndFillDB() async {
   printBox('added');
 }
 
-Future<void> removeAnimal() async {
+Future<void> removeAnimals() async {
   var animal = objectsBox.getAt(0).animals[0];
   animal.delete();
+  print("test4");
   printBox('animal removed');
 }
 
